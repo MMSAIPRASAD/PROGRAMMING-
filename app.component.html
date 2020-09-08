@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="sidenav">
+
+  <p>Topics</p>
+  <button class="dropdown-btn">Pre-Algebra 
+    <i class="fa fa-caret-down"></i>
+  </button>
+
+  <button class="dropdown-btn">Algebra 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  
+
+  <button class="dropdown-btn">  Trigonometry
+    <i class="fa fa-caret-down"></i>
+    
+  </button>
+  
+
+  <button class="dropdown-btn">Calculus 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  
+  
+<br>
+
+<br>
+
+
+
+  <a >Algebra Calculator</a>
+  <a >Trigonometry Calculator</a>
+  <a >Calculus Calculator</a>
+  <a >Matrix Calculator</a>
+  
+  
+</div>
+
+ 
+ 
+
+
+
+
+<div class="search-container">
+  
+    <input type="text" class="searchTerm" >
+    <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+   </button>
+   </div>
+ 
+
+  
+  
+
+  
+
+<div class="row">
+  <div class="column" style="background-color:white;">
+  <div class="p">
+    <h2>Evaluate</h2>
+    <p><i>3x⁴</i></p>
+    <br>
+    
+    <button class="button" (click)="onclick()"> Hide/Unhide Steps </button>
+    <ng-container *ngIf="visible">
+    <div >
+    
+
+   <p><b>SOLUTION STEPS</b></p>
+   <br>
+   <p><i> x.x².3x</i> </p>
+   <br>
+   
+
+<p class="p1">To multiply powers of the same base,add their exponents.Add 1 and 2 to get 3 </p>
+
+<br>
+
+x³ ×3x
+<br>
+
+<p class="p1">To multiply powers of the same base,add their exponents.Add 3 and 1 to get 4 </p>
+
+<br>
+
+<p><i>x⁴ ×3</i></p>
+  </div>
+
+</ng-container>
+</div>
+</div>
+<div class="column" style="background-color:white;">
+  <div class="p">
+<h1>Graph</h1>
+
+
+<img src="https://images.app.goo.gl/KfV8hmUrGUNdKFbV8" alt="PARABOLA GRAPH" width="400" height="400">
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</body>
+</html> 
+
+<app-algebracalculator></app-algebracalculator>
+
+<router-outlet></router-outlet>
+
