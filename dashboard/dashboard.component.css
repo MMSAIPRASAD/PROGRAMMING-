@@ -1,0 +1,66 @@
+.col {
+   
+    height:150px;
+    text-align:center;
+    
+    
+    
+}
+
+.row{
+    margin-left:200px;
+  
+    
+}
+
+.col1 {
+    height:150px;
+    width:600px;
+    text-align:left;
+ 
+  
+   
+}
+
+.para {
+    border: 2px solid;
+    border-radius: 8px;
+    font-size:20px;
+    text-align:center;
+    background-color: blue;
+    margin-right:4px;
+    
+  
+  }
+
+  .col2 {
+    border:1px solid red;
+    height:350px;
+    width:300px;
+    margin-right:200px;
+
+    
+  }
+
+  .col3 {
+   
+    height:800px;
+    width:100px;
+    background-color: lightgrey;
+    
+    
+    
+  
+  }
+
+  .grey {
+    background: white;
+    
+  }
+
+  .border{
+    border:1px;
+    width:250px;
+    height:400px;
+    margin-right: 1px;
+  }

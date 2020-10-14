@@ -1,0 +1,79 @@
+<div class="list row row1">
+    <div class="col-md-8">
+      <div class="input-group mb-4">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search by name"
+          [(ngModel)]="name"
+        >
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            (click)="searchByName()"
+          >
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+     
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let product of products; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setCurrentProduct(product, i)"
+        >
+              {{ product.name }}
+        </li>
+      </ul>
+  
+      <button class="m-4 btn btn-sm btn-danger" (click)="deleteAllProducts()">
+        Delete All Patient
+      </button>
+      <button class="m-4 btn btn-sm btn-danger"><a href="create" style="color:white">Add patient</a></button>
+    </div>
+    <div class="col-md-6">
+      <div *ngIf="currentProduct">
+        <h4>Patient</h4>
+        <div>
+          <label><strong>Name:</strong></label> 
+          {{currentProduct.name }}
+        </div>
+        <div>
+          <label><strong>Details:</strong></label>
+          {{currentProduct.description }}       
+  </div>
+        
+        <a class="badge badge-warning" routerLink="/products/{{currentProduct.id }}">
+          Edit
+        </a>
+      </div>
+  
+      <div *ngIf="!currentProduct">
+        <br />
+        <p>Please click on a patient</p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div class="col-6 float">
+    <div class="col-md-6 border vh-80">
+       <div class="d-flex flex-column align-items-center">
+          <div class="p-1">
+             <video #video class="vid" autoplay></video>
+          </div>
+          <div class="pb-2">
+             <button class="btn btn-primary cap" >Capture Image</button>
+          </div>
+          <div class="p-1">
+             <canvas #canvas class="vid"></canvas>
+          </div>
+       </div>
+    </div>
+    </div>

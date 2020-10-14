@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "name": "Baskar Rao",
+      "description": "MALE,Born:1920,age:100,phn:1234567890",
+      "id": 1
+    },
+    {
+      "name": "Sunil Pattu",
+      "description": "MALE,Born:1980,age:40,phn:1234567890",
+      "id": 2
+    },
+    {
+      "name": "Neeraj Nanda",
+      "description": "MALE,Born:2004,age:16,phn:1234567890",
+      "id": 3
+    },
+    {
+      "name": "Suresh Pattu",
+      "description": "MALE,Born:1974,age:46,phn:1234567890",
+      "id": 4
+    },
+    {
+      "name": "Pooja Fernandes",
+      "description": "FEMALE,Born:1984,age:36,phn:1245673890",
+      "id": 5
+    },
+    {
+      "name": "Anil ",
+      "description": "MALE,Born:1984,age:36,phn:1234567890",
+      "id": 6
+    },
+    {
+      "name": "Rahul ",
+      "description": "MALE",
+      "id": 7
+    }
+  ]
+}
